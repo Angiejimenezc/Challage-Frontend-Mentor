@@ -8,28 +8,31 @@
   box-sizing: border-box;
 }
 
-/*- Light red (CTA text): hsl(356, 100%, 66%)
-- Very light red (CTA hover background): hsl(355, 100%, 74%)
-- Very dark blue (headings): hsl(208, 49%, 24%)*/
+/*- - - Very dark gray blue: 
+- Very dark desaturated blue: */
 
 :root {
   --font1: "Overpass", sans-serif;
   --font2: "Ubuntu", sans-serif;
   --gradient-very-light-red: hsl(13, 100%, 72%);
   --gradient-light-red: hsl(353, 100%, 62%);
+  --gradient-v-gray-blue: hsl(237, 17%, 21%);
+  --gradient-v-d-desaturated-blue: hsl(237, 23%, 32%);
   --padding-container: 80px 0;
   --color-white: #fff;
   --color-l-red: hsl(356, 100%, 66%);
   --color-v-l-red: hsl(355, 100%, 74%);
   --color-v-d-blue: hsl(208, 49%, 24%);
+  --color-very-d-grayish-blue: hsl(207, 13%, 34%);
+  --color-v-d-black-blue: hsl(240, 10%, 16%);
 }
 
 body {
   font-family: var(--font1);
-  background-color: black;
 }
 
 .hero {
+  overflow: hidden;
   --padding-container: 0;
   min-height: 100vh;
   background-image: linear-gradient(
@@ -38,6 +41,7 @@ body {
   );
   position: relative;
   z-index: 1;
+  border-radius: 0 0 0 90px;
 }
 .container {
   width: 90%;
@@ -100,4 +104,74 @@ body {
   left: -180px;
   height: 120%;
   z-index: -1;
+}
+
+/* --------------- */
+
+.subtitle {
+  font-size: 1.9rem;
+  color: var(--color-v-d-blue);
+  text-align: center;
+}
+.designed__container {
+  display: grid;
+}
+
+.designed__ilustration {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../images/illustration-editor-mobile.svg);
+}
+
+.designed__paragraph {
+  color: var(--color-very-d-grayish-blue);
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: var(--font2);
+  margin-top: 20px;
+}
+
+.disigned__about--margin {
+  margin-bottom: 40px;
+}
+.designed__subtitle {
+  font-size: 1.9rem;
+  color: var(--color-v-blue);
+  text-align: center;
+}
+/*--------------------*/
+
+.infrastructure {
+  --padding-container: 40px 0 80px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.infrastructure::before {
+  content: "";
+  display: block;
+  width: 100%;
+  top: 30%;
+  bottom: 0;
+  position: absolute;
+  background-color: var(--gradient-v-d-desaturated-blue);
+  z-index: -1;
+  border-radius: 0 100px 0 100px;
+}
+.infrastructure__container {
+  padding-bottom: 80px;
+}
+
+.infrastructure__title {
+  font-size: 2rem;
+}
+.infrastructure__phone {
+  width: 100%;
+}
+.infrastructure__paragraph {
+  color: var(--);
 }
