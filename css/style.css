@@ -177,3 +177,35 @@ body {
   margin: auto;
   margin-top: 20%;
 }
+/*--------------------*/
+
+.footer {
+  background-color: var(--color-v-d-black-blue);
+  text-align: center;
+  font-family: var(--font2);
+  border-radius: 0 90px 0 0;
+}
+
+.footer__logo {
+  margin-bottom: 60px;
+}
+
+.footer__links {
+  margin-bottom: 60px;
+}
+.footer__links:nth-of-type(1) {
+  margin-bottom: 0px;
+}
+
+.footer__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: var(--color-grayish-blue);
+}
+
+.footer__link--main {
+  color: #fff;
+  font-weight: 700;
+}
