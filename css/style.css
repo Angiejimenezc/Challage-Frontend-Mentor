@@ -23,6 +23,7 @@
   --color-l-red: hsl(356, 100%, 66%);
   --color-v-l-red: hsl(355, 100%, 74%);
   --color-v-d-blue: hsl(208, 49%, 24%);
+  --color-grayish-blue: hsl(240, 2%, 79%);
   --color-very-d-grayish-blue: hsl(207, 13%, 34%);
   --color-v-d-black-blue: hsl(240, 10%, 16%);
 }
@@ -162,16 +163,17 @@ body {
   z-index: -1;
   border-radius: 0 100px 0 100px;
 }
-.infrastructure__container {
-  padding-bottom: 80px;
-}
 
 .infrastructure__title {
   font-size: 2rem;
 }
-.infrastructure__phone {
+.infrastructure__phones {
   width: 100%;
 }
 .infrastructure__paragraph {
-  color: var(--);
+  color: var(--color-grayish-blue);
+  line-height: 1.5rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 20%;
 }
